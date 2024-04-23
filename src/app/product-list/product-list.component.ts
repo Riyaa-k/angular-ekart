@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-product-list',
-  standalone: true,
-  imports: [],
+  selector: 'product-list',
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
+  product={
+    name:"P1",
+    price:400,
+    colour:"Black",
+    discount:8.5,
+    instock:1
+  }
+  getdiscount(){
+    return this.product.price-(this.product.price*this.product.discount/100);
+  }
 
 }

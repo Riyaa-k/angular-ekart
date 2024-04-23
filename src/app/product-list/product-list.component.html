@@ -1,1 +1,5 @@
-<p>product-list works!</p>
+<p>Name:{{product.name}}</p>
+<p>Price:{{'$'+product.price}}</p>
+<p>Colour:{{product.colour}}</p>
+<p>Discount:{{getdiscount().toFixed(0)}}</p>
+<p>{{product.instock>0 ? "only"+ product.instock + 'items left':"Not in stock"}}</p>
