@@ -23,6 +23,13 @@
     margin-left: -5px;
     color:#fff;
 }
+.btn-search-disable{
+    padding: 9.5px 30px;
+    background-color: #898787;
+    margin-left: -5px;
+    color:#fff;
+
+}
 
 .ekart-search-result-for{
     margin: 20px auto;
