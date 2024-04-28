@@ -1,16 +1,4 @@
 <div>
-
-    <!-- <img [src]="product.image">
-    <p>Name:{{product.name}}</p>
-    <p>Price:{{'$'+product.price}}</p>
-    <p>Colour:{{product.colour}}</p>
-    <p>Discount:{{getdiscount().toFixed(0)}}</p>
-    <p>{{product.instock>0 ? "only"+ product.instock + 'items left':"Not in stock"}}</p>
-    <button (click)="decrement()">-</button>
-    <span>{{Addtocart}}</span>
-    <button (click)="increment()">+</button> -->
-    <!-- <input (input)="handleinput($event)"> -->
-    <!-- <p>{{name}}</p> -->
-    <search></search>
-    <list></list>
+    <search (searchTextchange)="setSearchChange($event)"></search>
+    <list [searchText]="searchText"></list>
 </div>
