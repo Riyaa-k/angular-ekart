@@ -533,4 +533,16 @@ export class ListComponent {
     }
   ];
 
+  allproducts=this.products.length;
+  productinstock=this.products.filter(p=>p.is_in_inventory===true).length;
+  productoutstock=this.products.filter(p=>p.is_in_inventory===false).length;
+
+  selectedFilterRadio:string="all";
+
+  onFilterChange(event:string){
+    // console.log("from parent compo")
+    // console.log(event)
+    this.selectedFilterRadio=event;
+  }
+
 }
