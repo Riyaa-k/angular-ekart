@@ -12,6 +12,7 @@ import { MainMenuComponent } from './header/main-menu/main-menu.component';
 import { ListComponent } from './product-list/list/list.component';
 import { ProductComponent } from './product-list/list/product/product.component';
 import { FilterComponent } from './product-list/list/filter/filter.component';
+import { ProductDetailComponent } from './product-list/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FilterComponent } from './product-list/list/filter/filter.component';
     MainMenuComponent,
     ListComponent,
     ProductComponent,
-    FilterComponent
+    FilterComponent,
+    ProductDetailComponent
     
     
   ],

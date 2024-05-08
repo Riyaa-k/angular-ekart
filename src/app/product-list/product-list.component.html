@@ -1,4 +1,5 @@
 <div>
     <search (searchTextchange)="setSearchChange($event)"></search>
-    <list [searchText]="searchText"></list>
+    <list [searchText]="searchText" #productlistcomponent></list>
+    <product-detail *ngIf="productlistcomponent.selectedProduct" [productComp]="productListComponent"></product-detail>
 </div>
