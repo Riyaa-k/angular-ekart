@@ -13,6 +13,9 @@ import { ListComponent } from './product-list/list/list.component';
 import { ProductComponent } from './product-list/list/product/product.component';
 import { FilterComponent } from './product-list/list/filter/filter.component';
 import { ProductDetailComponent } from './product-list/product-detail/product-detail.component';
+import { FeaturedBrandsComponent } from './product-list/featured-brands/featured-brands.component';
+import { SetBackground } from './Custom directive/SetBackground.directive';
+import { HighlightDirective } from './Custom directive/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ProductDetailComponent } from './product-list/product-detail/product-de
     ListComponent,
     ProductComponent,
     FilterComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    FeaturedBrandsComponent,
+    SetBackground,
+    HighlightDirective
     
     
   ],

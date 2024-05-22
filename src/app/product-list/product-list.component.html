@@ -1,5 +1,31 @@
-<div>
+<div class="ekart--product--container">
     <search (searchTextchange)="setSearchChange($event)"></search>
     <list [searchText]="searchText" #productlistcomponent></list>
     <product-detail *ngIf="productlistcomponent.selectedProduct" [productComp]="productListComponent"></product-detail>
+
+    <div class="ekart-featured-products">
+        <div class="ekart-featured-product-heading">
+            <h1>Latest Arrival in popular brands</h1>
+
+        </div>
+
+        <featured-brands>
+            <h3 class="title">New Arrivals in Nike</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Addidas</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Puma</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        <featured-brands>
+            <h3 class="title">New Arrivals in Lister</h3>
+            <button class="call-to-action">Learn More</button>
+        </featured-brands>
+        
+
+    </div>
 </div>
